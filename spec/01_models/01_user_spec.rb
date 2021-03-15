@@ -8,7 +8,7 @@ describe User do
       expect(User.create(name: nil)).to_not be_valid
     end
 
-    it "invalid if name already exists" do
+    it "invalid if name already exists" do 
       User.create(name: "Scabbers")
       expect(User.create(name: "Scabbers")).to_not be_valid
     end
